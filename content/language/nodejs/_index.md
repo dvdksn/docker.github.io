@@ -19,4 +19,5 @@ After completing the Node.js getting started modules, you should be able to cont
 
 Let's get started!
 
-[Build your Node.js image](build-images.md){: .button .primary-btn}
+{{< button type="link" url="build-images" text="Build your Node.js image" >}}
+
