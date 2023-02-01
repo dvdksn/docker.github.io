@@ -311,4 +311,5 @@ using into the appropriate compose format.
 At this point, you're starting to wrap up the tutorial. However, there are a few best practices about
 image building you should cover, as there is a big issue with the Dockerfile you've been using. 
 
-[Image-building best practices](09_image_best.md){: .button  .primary-btn}
+{{< button type="link" url="../09_image_best" text="Image-building best practices" >}}
+

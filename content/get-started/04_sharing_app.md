@@ -106,4 +106,4 @@ Now you can circle back around to what you noticed at the end of the last
 section. As a reminder, you noticed that when you restarted the app, you lost all of your todo list items.
 That's obviously not a great user experience, so next you'll learn how you can persist the data across restarts!
 
-[Persist the DB](05_persisting_data.md){: .button  .primary-btn}
+{{< button type="link" url="../05_persisting_data" text="Persist the DB" >}}

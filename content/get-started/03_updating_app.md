@@ -114,4 +114,4 @@ how to see code updates without needing to rebuild and start a new container eve
 
 Before talking about persistence, you'll see how to share these images with others.
 
-[Share the application](04_sharing_app.md){: .button .primary-btn}
+{{< button type="link" url="../04_sharing_app" text="Share the application" >}}

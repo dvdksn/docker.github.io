@@ -94,5 +94,4 @@ In this section, you learned about containers and images.
 
 In the next section, you'll containerize your first application.
 
-[Containerize an application](02_our_app.md){: .button  .primary-btn}
-
+{{< button type="link" url="02_our_app" text="Containerize an application" >}}

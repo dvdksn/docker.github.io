@@ -144,4 +144,4 @@ In this short section, you learned the basics about creating a Dockerfile to bui
 
 Next, you're going to make a modification to your app and learn how to update your running application with a new image. Along the way, you'll learn a few other useful commands.
 
-[Update the application](03_updating_app.md){: .button .primary-btn}
+{{< button type="link" url="../03_updating_app" text="Update the application" >}}

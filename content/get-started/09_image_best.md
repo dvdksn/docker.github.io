@@ -267,4 +267,4 @@ build-time dependencies from runtime dependencies.
 
 In the next section, you'll learn about additional resources you can use to continue learning about containers.
 
-[What next](11_what_next.md){: .button  .primary-btn}
+{{< button type="link" url="../11_what_next" text="What next" >}}

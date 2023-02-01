@@ -265,4 +265,4 @@ ports, and more! That's a lot to remember and it's certainly making things harde
 In the next section, you'll learn about Docker Compose. With Docker Compose, you can share your application stacks in a
 much easier way and let others spin them up with a single (and simple) command!
 
-[Use Docker Compose](08_using_compose.md){: .button  .primary-btn}
+{{< button type="link" url="../08_using_compose" text="Use Docker Compose" >}}
