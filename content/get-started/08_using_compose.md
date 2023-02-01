@@ -265,7 +265,7 @@ Now that we have our `docker-compose.yml` file, we can start it up!
     > and ready before trying to connect to it. Docker doesn't have any built-in
     > support to wait for another container to be fully up, running, and ready
     > before starting another container. For Node-based projects, you can use
-    > the [wait-port](https://github.com/dwmkerr/wait-port){:target="_blank" rel="noopener" class="_"}
+    > the [wait-port](https://github.com/dwmkerr/wait-port)
     > dependency. Similar projects exist for other languages/frameworks.
 
 4. At this point, you should be able to open your app and see it running. And hey! We're down to a single command!
@@ -293,11 +293,11 @@ for the entire app. The containers will stop and the network will be removed.
 >
 >Removing Volumes
 >
->By default, named volumes in your compose file are NOT removed when running `docker compose down`. If you want to
+>By default, named volumes in your compose file are not removed when running `docker compose down`. If you want to
 >remove the volumes, you will need to add the `--volumes` flag.
 >
->The Docker Dashboard does _not_ remove volumes when you delete the app stack.
-{: .warning}
+>The Docker Dashboard does not remove volumes when you delete the app stack.
+{ .warning }
 
 Once torn down, you can switch to another project, run `docker compose up` and be ready to contribute to that project! It really
 doesn't get much simpler than that!

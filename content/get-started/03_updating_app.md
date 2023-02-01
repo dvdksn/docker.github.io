@@ -15,12 +15,12 @@ In the steps below, you will change the "empty text" when you don't have any tod
 
     ```diff
     ...
-    -                <p className="text-center">No items yet! Add one above!</p>
-    +                <p className="text-center">You have no todo items yet! Add one above!</p>
+    - <p className="text-center">No items yet! Add one above!</p>
+    + <p className="text-center">You have no todo items yet! Add one above!</p>
     ...
     ```
 
-2. Build your updated version of the image, using the same `docker build` command you used in [part 2](./02_our_app.md/#build-the-apps-container-image){:target="_blank" rel="noopener" class="_"}.
+2. Build your updated version of the image, using the same `docker build` command you used in [part 2](./02_our_app.md/#build-the-apps-container-image).
 
     ```console
     $ docker build -t getting-started .
@@ -45,12 +45,9 @@ The error occurred because you aren't able to start the new container while your
 
 To remove a container, you first need to stop it. Once it has stopped, you can remove it. You can remove the old container using the CLI or Docker Desktop's graphical interface. Choose the option that you're most comfortable with.
 
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#cli">CLI</a></li>
-  <li><a data-toggle="tab" data-target="#gui">Docker Desktop</a></li>
-</ul>
-<div class="tab-content">
-<div id="cli" class="tab-pane fade in active" markdown="1">
+{{< tabs >}}
+{{< tab name="CLI" >}}
+
 
 ### Remove a container using the CLI
 
@@ -76,9 +73,8 @@ To remove a container, you first need to stop it. Once it has stopped, you can r
 >
 >You can stop and remove a container in a single command by adding the `force` flag to the `docker rm` command. For example: `docker rm -f <the-container-id>`
 
-<hr>
-</div>
-<div id="gui" class="tab-pane fade" markdown="1">
+{{< /tab >}}
+{{< tab name="Docker Desktop" >}}
 
 ### Remove a container using Docker Desktop
 
@@ -86,9 +82,8 @@ To remove a container, you first need to stop it. Once it has stopped, you can r
 2. Select the trash can icon under the **Actions** column for the old container that you want to delete.
 3. In the confirmation dialog, select **Delete forever**.
 
-<hr>
-</div>
-</div>
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Start the updated app container
 
@@ -98,10 +93,9 @@ To remove a container, you first need to stop it. Once it has stopped, you can r
     $ docker run -dp 3000:3000 getting-started
     ```
 
-2. Refresh your browser on [http://localhost:3000](http://localhost:3000){:target="_blank" rel="noopener" class="_"} and you should see your updated help text.
+2. Refresh your browser on [http://localhost:3000](http://localhost:3000) and you should see your updated help text.
 
-![Updated application with updated empty text](images/todo-list-updated-empty-text.png){: style="width:55%" }
-{: .text-center }
+![Updated application with updated empty text](images/todo-list-updated-empty-text.png)
 
 ## Next steps
 

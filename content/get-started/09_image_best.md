@@ -7,7 +7,7 @@ description: Tips for building the images for our application
 ## Security scanning
 
 When you have built an image, it is a good practice to scan it for security vulnerabilities using the `docker scan` command.
-Docker has partnered with [Snyk](https://snyk.io){:target="_blank" rel="noopener" class="_"} to provide the vulnerability scanning service.
+Docker has partnered with [Snyk](https://snyk.io) to provide the vulnerability scanning service.
 
 > **Note**
 > 
@@ -50,8 +50,7 @@ There are several other options, which you can read about in the [docker scan do
 As well as scanning your newly built image on the command line, you can also [configure Docker Hub](../docker-hub/vulnerability-scanning.md)
 to scan all newly pushed images automatically, and you can then see the results in both Docker Hub and Docker Desktop.
 
-![Hub vulnerability scanning](images/hvs.png){: style=width:75% }
-{: .text-center }
+![Hub vulnerability scanning](images/hvs.png)
 
 ## Image layering
 
@@ -147,7 +146,7 @@ a change to the `package.json`. Make sense?
     it would possibly overwrite files which were created by the command in the `RUN` step.
     For further details on why this is recommended for Node.js applications and other best practices,
     have a look at their guide on
-    [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/){:target="_blank" rel="noopener" class="_"}.
+    [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/).
 
 3. Build a new image using `docker build`.
 

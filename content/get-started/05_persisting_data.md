@@ -104,8 +104,7 @@ name of the volume.
 
 4. Once the container starts up, open the app and add a few items to your todo list.
 
-    ![Items added to todo list](images/items-added.png){: style="width: 55%; " }
-    {: .text-center }
+    ![Items added to todo list](images/items-added.png)
 
 5. Stop and remove the container for the todo app. Use the Dashboard or `docker ps` to get the ID and then `docker rm -f <id>` to remove it.
 

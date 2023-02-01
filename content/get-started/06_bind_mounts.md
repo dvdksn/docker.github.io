@@ -18,8 +18,7 @@ that you can run processes in the container that watch for filesystem changes
 and respond to them.
 
 In this chapter, we'll see how we can use bind mounts and a tool called
-[nodemon](https://npmjs.com/package/nodemon){:target="_blank" rel="noopener"
-class="_"} to watch for file changes, and then restart the application
+[nodemon](https://npmjs.com/package/nodemon) to watch for file changes, and then restart the application
 automatically. There are equivalent tools in most other languages and
 frameworks.
 
@@ -187,8 +186,7 @@ So, let's do it!
    almost immediately. It might take a few seconds for the Node server to
    restart. If you get an error, try refreshing after a few seconds.
 
-   ![Screenshot of updated label for Add button](images/updated-add-button.png){:
-   style="width:75%;" .text-center}
+   ![Screenshot of updated label for Add button](images/updated-add-button.png)
 
 6. Feel free to make any other changes you'd like to make. Each time you make a
    change and save a file, the `nodemon` process restarts the app inside the
