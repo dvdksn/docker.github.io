@@ -6,11 +6,10 @@ aliases:
 - /get-started/golang/configure-ci-cd/
 ---
 
-{% include_relative nav.html selected="5" %}
 
 ## Get started with GitHub Actions
 
-{% include gha-tutorial.md %}
+{{< include "gha-tutorial.md" >}}
 
 ## Next steps
 
@@ -20,8 +19,8 @@ You can also consider deploying your application to a public Cloud provider, suc
 
 In the next module, we’ll look into some options for doing so:
 
-[Deploy your app](deploy.md){: .button .outline-btn}
+{{< button type="link" url="../deploy" text="Deploy your app" >}}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[golang%20docs%20feedback]) GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls) to suggest updates.

@@ -21,4 +21,4 @@ After completing the .NET getting started modules, you should be able to contain
 
 Let's get started!
 
-[Build your first .NET image](build-images.md){: .button .primary-btn}
+{{< button type="link" url="build-images" text="Build your first .NET image" >}}

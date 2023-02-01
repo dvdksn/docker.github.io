@@ -6,8 +6,6 @@ aliases:
 - /get-started/golang/develop/
 ---
 
-{% include_relative nav.html selected="3" %}
-
 ## Prerequisites
 
 Work through the steps of the [run your image as a container](run-containers.md) module to learn how to manage the lifecycle of your containers.
@@ -131,7 +129,6 @@ $ docker exec -it roach ./cockroach sql --insecure
 
 An example of interaction with the SQL shell is presented below.
 
-{% raw %}
 ```console
 $ sudo docker exec -it roach ./cockroach sql --insecure
 #
@@ -162,7 +159,6 @@ Time: 14.217559ms
 root@:26257/defaultdb> quit
 oliver@hki:~$
 ```
-{% endraw %}
 
 ### Meet the example application
 
@@ -196,7 +192,6 @@ And _now_ it's going to be:
 
 The full source code listing of `main.go` follows.
 
-{% raw %}
 ```go
 package main
 
@@ -337,7 +332,6 @@ func countRecords(db *sql.DB) (int, error) {
 	return count, nil
 }
 ```
-{% endraw %}
 
 The repository also includes the `Dockerfile`, which is almost exactly the same as the multi-stage `Dockerfile` introduced in the previous modules. It uses the official Docker Go image to build the application and then builds the final image by placing the compiled binary into the much slimmer, "distroless" image.
 
@@ -527,7 +521,6 @@ In this section, we’ll create a Docker Compose file to start our `docker-gs-pi
 
 In our application's directory, create a new text file named `docker-compose.yml` with the following content.
 
-{% raw %}
 ```yaml
 version: '3.8'
 
@@ -572,7 +565,6 @@ networks:
   mynet:
     driver: bridge
 ```
-{% endraw %}
 
 This Docker Compose configuration is super convenient as we do not have to type all the parameters to pass to the `docker run` command. We can declaratively do that in the Docker Compose file. The [Docker Compose documentation pages](../../compose/index.md) are quite extensive and include a full reference for the Docker Compose file format.
 
@@ -740,8 +732,9 @@ In this module, we set up a containerised development environment with our appli
 
 In the next module, we’ll take a look at one possible approach to running functional tests in Docker. See:
 
-[Run your tests](run-tests.md){: .button .outline-btn}
+{{< button type="link" url="../run-tests" text="Run your tests" >}}
+
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[golang%20docs%20feedback]) GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls) to suggest updates.

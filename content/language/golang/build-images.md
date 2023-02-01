@@ -6,12 +6,10 @@ aliases:
 - /get-started/golang/build-images/
 ---
 
-{% include_relative nav.html selected="1" %}
-
 ## Prerequisites
 
 * Some understanding of Go and its toolchain. This is not a tutorial on Go. If
-  you are new to the language, the [Go website](https://golang.org/){: target="_blank" rel="noopener" class="_"}
+  you are new to the language, the [Go website](https://golang.org/)
   is a good starting point, so go (pun intended) check it out.
 * You understand basic [Docker concepts](../../get-started/overview.md).
 * You're familiar with the [Dockerfile format](../../build/building/packaging.md#dockerfile).
@@ -30,7 +28,7 @@ To complete this tutorial, you need the following:
 
 - Go version 1.16 or later. You might want to [download and install Go](https://golang.org/dl/) first.
 - Docker running locally. Follow the instructions to [download and install Docker](../../desktop/index.md).
-- An IDE or a text editor to edit files. We recommend using [Visual Studio Code](https://code.visualstudio.com/){: target="_blank" rel="noopener" class="_"}.
+- An IDE or a text editor to edit files. We recommend using [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Meet the example application
 
@@ -44,7 +42,7 @@ HTTP server that has only three features:
 Thus, it somewhat mimics enough basic properties of a REST microservice to be
 useful for our learning of Docker.
 
-The source code for the application is in the [github.com/olliefr/docker-gs-ping](https://github.com/olliefr/docker-gs-ping){: target="_blank" rel="noopener" class="_"}
+The source code for the application is in the [github.com/olliefr/docker-gs-ping](https://github.com/olliefr/docker-gs-ping)
 GitHub repository. Please feel free to clone or fork it.
 
 For our present study, we clone it to our local machine:
@@ -56,7 +54,7 @@ $ git clone https://github.com/olliefr/docker-gs-ping
 The application's `main.go` file is fairly straightforward, if you are familiar
 with Go:
 
-{% raw %}
+
 ```go
 package main
 
@@ -91,7 +89,6 @@ func main() {
 	e.Logger.Fatal(e.Start(":" + httpPort))
 }
 ```
-{% endraw %}
 
 ## Smoke test the application
 
@@ -424,7 +421,6 @@ running the artifacts that we'd built.
 The `Dockerfile.multistage` in the sample application's repo has the following
 content:
 
-{% raw %}
 ```dockerfile
 # syntax=docker/dockerfile:1
 
@@ -454,7 +450,6 @@ USER nonroot:nonroot
 
 ENTRYPOINT ["/docker-gs-ping"]
 ```
-{% endraw %}
 
 Since we have two dockerfiles now, we have to tell Docker that we want to build
 using our new Dockerfile. We also tag the new image with `multistage` but this
@@ -476,7 +471,7 @@ docker-gs-ping   multistage   e3fdde09f172   About a minute ago   27.1MB
 docker-gs-ping   latest       336a3f164d0f   About an hour ago    540MB
 ```
 
-This is due to the fact that the ["distroless" base image](https://github.com/GoogleContainerTools/distroless){:target="_blank" rel="noopener" class="_"}
+This is due to the fact that the ["distroless" base image](https://github.com/GoogleContainerTools/distroless)
 that we have used to deploy our Go application is very barebones and is meant
 for lean deployments of static binaries.
 
@@ -493,11 +488,8 @@ that we used to build our Docker image. Then, we took a look at tagging our
 images and removing images and tags. In the next module, we’ll take a look at
 how to:
 
-[Run your image as a container](run-containers.md){: .button .outline-btn}
+{{< button type="link" url="../run-containers" text="Run your image as a container" >}}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you
-think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"}
-GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"}
-to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[golang%20docs%20feedback]) GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls) to suggest updates.

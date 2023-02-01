@@ -4,11 +4,9 @@ keywords: .net, CI/CD, local, development
 description: Learn how to Configure CI/CD for your application
 ---
 
-{% include_relative nav.html selected="5" %}
-
 ## Get started with GitHub Actions
 
-{% include gha-tutorial.md %}
+{{< include "gha-tutorial.md" >}}
 
 ## Next steps
 
@@ -16,7 +14,7 @@ In this module, you have learnt how to set up GitHub Actions workflow to an exis
 
 You can also consider deploying your application. For detailed instructions, see:
 
-[Deploy your app](deploy.md){: .button .primary-btn}
+{{< button type="link" url="../deploy" text="Deploy your app" >}}
 
 ## Feedback
 

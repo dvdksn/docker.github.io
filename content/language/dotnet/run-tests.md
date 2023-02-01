@@ -4,8 +4,6 @@ keywords: .NET, build, test
 description: How to build and run your tests
 ---
 
-{% include_relative nav.html selected="4" %}
-
 ## Prerequisites
 
 Work through the steps to build an image and run it as a containerized application in [Use containers for development](develop.md).
@@ -118,8 +116,8 @@ The test class picks up the configurations and lessons we learned in the previou
 
 In the next module, we’ll take a look at how to set up a CI/CD pipeline using GitHub Actions. See:
 
-[Configure CI/CD](configure-ci-cd.md){: .button .primary-btn}
+{{< button type="link" url="../configure-ci-cd" text="Configure CI/CD" >}}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[dotnet%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[dotnet%20docs%20feedback]) GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls) to suggest updates.

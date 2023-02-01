@@ -4,8 +4,6 @@ keywords: .net, local, development, run,
 description: Learn how to develop your application locally.
 ---
 
-{% include_relative nav.html selected="3" %}
-
 ## Prerequisites
 
 Work through the steps to build an image and run it as a containerized application in [Run your image as a container](run-containers.md).
@@ -453,8 +451,8 @@ Now let’s test our application. Using a web browser, access `http://localhost:
 
 In the next module, we’ll take a look at how to write containerized tests in Docker. See:
 
-[Run your tests](run-tests.md){: .button .primary-btn}
+{{< button type="link" url="../run-tests" text="Run your tests" >}}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[dotnet%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs](https://github.com/docker/docker.github.io/issues/new?title=[dotnet%20docs%20feedback]) GitHub repository. Alternatively, [create a PR](https://github.com/docker/docker.github.io/pulls) to suggest updates.
